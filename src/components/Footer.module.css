@@ -1,0 +1,134 @@
+.footer{
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(7, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    justify-items: center;
+
+}
+
+.footer .desc{
+    grid-column: 1/4;
+
+}
+
+.footer .desc .logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo p{
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.footer .desc img{
+    width: 85px;
+}
+
+.footer .content{
+    text-align: justify;
+}
+
+.footer .Sections{
+    grid-column: 4/6;
+    text-align: center;
+}
+
+.Sections p:first-child{
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-size: 1.2rem;
+    color: #0009;
+}
+
+
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.link p{
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.social {
+    margin-top: 50px;
+
+}
+.social svg{
+    font-size: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #000c;
+}
+
+.link p:not(:first-child){
+    margin-top: 0px;
+}
+
+.contactus{
+    grid-column: 6/8;
+    text-align: center;
+}
+
+.contactus p:first-child{
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-size: 1.2rem;
+    color: #0009;
+}
+
+.contactus .info{
+    margin-top: 10px;
+}   
+
+.desierd {
+    grid-column: 4/5;
+    text-align: center;
+}
+
+.desierd svg:first-child{
+    color: red;
+}
+
+.desierd svg:nth-child(2){
+ color: brown;
+}
+
+.squer{
+    width:7px;
+    height:7px;
+    background:#e8eaf6;
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Sections p:first-child{
+        margin-top: 20px;
+    }
+
+    .contactus p:first-child{
+        margin-top: 20px;
+    }
+
+    .social{
+        margin-top: 10px;
+    }
+
+    .desierd{
+        margin-top: 35px;
+    }
+
+}

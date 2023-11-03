@@ -1,0 +1,38 @@
+.card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    scale: .95;
+    /* grid-template-rows: repeat(2,fr); */
+    /* gap: 20p 30px; */
+    /* grid-template-rows: 2; */
+}
+
+.Service {
+    /* background-color: #ccc; */
+    text-align: center;
+    padding: 15px 10px;
+    /* width: 1200px; */
+    /* margin: 0 auto; */
+}
+
+.Service h1{
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-size: 46px;
+}
+
+.Service .text{
+    /* width: 600px; */
+    color: #202020;
+    display: inline;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 15px;
+}
+
+@media screen and (max-width: 999px){
+    .card{
+        display: none;
+        text-align: center
+    }
+}
