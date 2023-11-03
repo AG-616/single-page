@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import style from './Banner.module.css';
-import img from '../images/banner.jpeg'
+import img from '../images/banner-min.jpeg'
 // import img from '../banner.jpeg';
 
 
